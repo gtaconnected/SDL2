@@ -48,13 +48,13 @@ extern void SDL_SetScancodeName(SDL_Scancode scancode, const char *name);
 extern void SDL_SetKeyboardFocus(SDL_Window * window);
 
 /* Send a keyboard key event */
-extern int SDL_SendKeyboardKey(Uint8 state, SDL_Scancode scancode);
+//extern int SDL_SendKeyboardKey(Uint8 state, SDL_Scancode scancode);
 
 /* Send keyboard text input */
-extern int SDL_SendKeyboardText(const char *text);
+//extern int SDL_SendKeyboardText(const char *text);
 
 /* Send editing text for selected range from start to end */
-extern int SDL_SendEditingText(const char *text, int start, int end);
+//extern int SDL_SendEditingText(const char *text, int start, int end);
 
 /* Shutdown the keyboard subsystem */
 extern void SDL_KeyboardQuit(void);

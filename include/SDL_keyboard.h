@@ -60,6 +60,13 @@ typedef struct SDL_Keysym
 extern DECLSPEC SDL_Window * SDLCALL SDL_GetKeyboardFocus(void);
 
 /**
+ *  \brief Internal functions for using input system. -JP
+ */
+extern DECLSPEC int SDLCALL SDL_SendKeyboardKey(Uint8 state, SDL_Scancode scancode);
+extern DECLSPEC int SDLCALL SDL_SendKeyboardText(const char *text);
+extern DECLSPEC int SDLCALL SDL_SendEditingText(const char *text, int start, int length);
+
+/**
  *  \brief Get a snapshot of the current state of the keyboard.
  *
  *  \param numkeys if non-NULL, receives the length of the returned array.
